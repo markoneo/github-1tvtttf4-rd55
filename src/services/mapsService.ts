@@ -6,36 +6,92 @@ declare global {
   interface Window {
     google: any;
     googleMapsLoaded?: boolean;
+    initGoogleMaps?: () => void;
   }
 }
 
+let isLoadingScript = false;
+let scriptLoadPromise: Promise<void> | null = null;
+
 /**
- * Wait for Google Maps API to load
+ * Load Google Maps API script
  */
-export const waitForGoogleMaps = (): Promise<void> => {
-  return new Promise((resolve, reject) => {
-    // Check if Google Maps is already loaded
+const loadGoogleMapsScript = (): Promise<void> => {
+  if (scriptLoadPromise) {
+    return scriptLoadPromise;
+  }
+
+  scriptLoadPromise = new Promise((resolve, reject) => {
+    // Check if already loaded
     if (window.google?.maps?.places) {
       resolve();
       return;
     }
 
-    // Listen for the load event
+    if (isLoadingScript) {
+      const handleLoad = () => {
+        if (window.google?.maps?.places) {
+          window.removeEventListener('google-maps-loaded', handleLoad);
+          resolve();
+        }
+      };
+      window.addEventListener('google-maps-loaded', handleLoad);
+      return;
+    }
+
+    isLoadingScript = true;
+
+    const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
+    if (!apiKey) {
+      isLoadingScript = false;
+      reject(new Error('Google Maps API key not found in environment variables'));
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=initGoogleMaps`;
+    script.async = true;
+    script.defer = true;
+
+    script.onerror = () => {
+      isLoadingScript = false;
+      reject(new Error('Failed to load Google Maps script'));
+    };
+
+    document.head.appendChild(script);
+
     const handleLoad = () => {
       if (window.google?.maps?.places) {
         window.removeEventListener('google-maps-loaded', handleLoad);
+        isLoadingScript = false;
         resolve();
       }
     };
 
     window.addEventListener('google-maps-loaded', handleLoad);
 
-    // Set a timeout to reject if it takes too long
     setTimeout(() => {
       window.removeEventListener('google-maps-loaded', handleLoad);
-      reject(new Error('Google Maps API failed to load'));
+      if (!window.google?.maps?.places) {
+        isLoadingScript = false;
+        reject(new Error('Google Maps API failed to load within 10 seconds'));
+      }
     }, 10000);
   });
+
+  return scriptLoadPromise;
+};
+
+/**
+ * Wait for Google Maps API to load
+ */
+export const waitForGoogleMaps = (): Promise<void> => {
+  if (window.google?.maps?.places) {
+    return Promise.resolve();
+  }
+
+  return loadGoogleMapsScript();
 };
 
 /**
