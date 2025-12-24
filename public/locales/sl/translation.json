@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "title": "Pametne Prevozne Rešitve",
+    "subtitle": "Uživajte v udobju in zanesljivosti z našo privatno prevozno službo",
+    "searchDescription": "Naš inteligentni iskalnik najde popolno ujemanje za vašo pot",
+    "bookButton": "Rezervirajte Prevoz"
+  },
+  "booking": {
+    "title": "Rezervirajte Svoj Privatni Prevoz",
+    "subtitle": "Izpolnite spodnji obrazec in poslali vam bomo personalizirano ponudbo",
+    "form": {
+      "pickupLabel": "Naslov Prevzema",
+      "dropoffLabel": "Naslov Dostave",
+      "dateLabel": "Datum",
+      "timeLabel": "Čas",
+      "passengersLabel": "Potniki",
+      "nextButton": "Naslednji Korak",
+      "submitButton": "Zahtevaj Rezervacijo"
+    }
+  },
+  "features": {
+    "title": "Zakaj Izbrati Nas",
+    "professional": {
+      "title": "Profesionalna Storitev",
+      "description": "Izkušeni in vljudni vozniki so vam na voljo"
+    },
+    "comfortable": {
+      "title": "Udobna Vozila",
+      "description": "Moderna flota vozil za luksuzno potovanje"
+    },
+    "support": {
+      "title": "24/7 Podpora",
+      "description": "Celodnevna podpora strankam za vaš mir"
+    }
+  },
+  "footer": {
+    "contact": "Kontaktirajte Nas",
+    "privacy": "Politika Zasebnosti",
+    "terms": "Pogoji Uporabe",
+    "rights": "Vse pravice pridržane"
+  },
+  "offers": {
+    "winter": {
+      "badge": "Zimska Ponudba 2025-2026",
+      "title": "Priljubljene Destinacije v Dolomitih 2025-2026",
+      "subtitle": "Odkrijte osupljivo lepoto Italijanskih Dolomitov. Z letališča v Benetkah zagotavljamo udobne prevoze do teh gorskih destinacij, vpisanih na UNESCO-v seznam svetovne dediščine, popolnih za smučanje, pohodništvo in alpske izkušnje.",
+      "from": "od",
+      "save": "Prihranite",
+      "highlights": "Poudarki",
+      "bookNow": "Rezerviraj Zdaj",
+      "validUntil": "* Ponudbe veljajo do 31. marca 2026 | Glede na razpoložljivost",
+      "cortina": {
+        "destination": "Cortina d'Ampezzo",
+        "description": "Kraljica Dolomitov, znana po osupljivi gorski pokrajini in smučanju svetovnega razreda. Dom zimskih olimpijskih iger 2026.",
+        "duration": "~3,5 ure od Benetk",
+        "availability": "Vse leto",
+        "highlight1": "Prizorišče zimskih olimpijskih iger 2026",
+        "highlight2": "Luksuzno gorsko letovišče",
+        "highlight3": "Vrhunske smučarske proge"
+      },
+      "altabadia": {
+        "destination": "Alta Badia (Corvara)",
+        "description": "Raj za gurmansko hrano in ljubitelje smučanja, znan po ladinški kulturi in izjemni gorski kuhinji.",
+        "duration": "~3 ure od Benetk",
+        "availability": "Zima in Poletje",
+        "highlight1": "Gurmansko gorske restavracije",
+        "highlight2": "Smučarski krog Sella Ronda",
+        "highlight3": "Avtentična ladinska kultura"
+      },
+      "valgardena": {
+        "destination": "Val Gardena (Ortisei)",
+        "description": "Slikovita dolina, ki združuje nemško govoreče kulturo z italijanskim šarmom in ponuja smučanje in pohodništvo svetovnega razreda.",
+        "duration": "~3,5 ure od Benetk",
+        "availability": "Vse leto",
+        "highlight1": "Saslong spust",
+        "highlight2": "Tradicionalna rezbarstvo v lesu",
+        "highlight3": "Proge primerne za družine"
+      },
+      "arabba": {
+        "destination": "Arabba",
+        "description": "Skrita perla v srcu Dolomitov, popolna za tiste, ki iščejo pristne gorske izkušnje in nedotaknjene strmine.",
+        "duration": "~3 ure od Benetk",
+        "availability": "Zima in Poletje",
+        "highlight1": "Pristna gorska vas",
+        "highlight2": "Dostop do ledenika Marmolada",
+        "highlight3": "Osamljena lokacija",
+        "highlight4": "Družini prijazna atmosfera"
+      },
+      "email": {
+        "subject": "Zahteva za rezervacijo zimskega prevoza - {{destination}}",
+        "body": "Pozdravljeni,\n\nRad bi zahteval rezervacijo prevoza za naslednjo zimsko posebno ponudbo:\n\nDestinacija: {{destination}}\nCena: {{price}}\nTrajanje potovanja: {{duration}}\nRazpoložljivost: {{availability}}\n\nPoudarki:\n• {{highlights}}\n\n--- PROSIMO, IZPOLNITE NASLEDNJE INFORMACIJE ---\n\nŽeleni datum: [Prosimo, dodajte želeni datum potovanja]\nŽeleni čas: [Prosimo, dodajte želeni čas prevzema]\nŠtevilo potnikov: [Prosimo, navedite]\nLokacija prevzema: [Prosimo, navedite - npr. letališče Benetke, naslov hotela]\nLokacija dostave: {{destination}}\n\nDodatne opombe/posebne želje:\n[Prosimo, dodajte posebne zahteve ali vprašanja]\n\nKontaktne informacije:\nIme: [Vaše polno ime]\nTelefon: [Vaša telefonska številka]\nE-pošta: [Vaš e-poštni naslov]\n\nHvala!\n\n---\nZimska ponudba 2025-2026\nPonudbe veljajo do 31. marca 2026"
+      }
+    },
+    "marketplace": {
+      "title": "ZASEBNI PREVOZ\nTRŽNICA",
+      "privateTransfer": "Zasebni prevoz",
+      "marketplace": "Tržnica",
+      "compareOffers": "Primerjajte ponudbe",
+      "visitWebsite": "Obiščite spletno stran"
+    }
+  }
+}
