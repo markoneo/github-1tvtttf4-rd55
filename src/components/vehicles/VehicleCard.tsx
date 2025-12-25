@@ -22,7 +22,7 @@ export default function VehicleCard({
       case 'van':
         return 'https://markoneo123.sirv.com/RC/561-5610848_mercedes-vito-hd-png-download.png';
       case 'minivan':
-        return 'https://i.postimg.cc/DzX3t00R/979f86245703bdf377eeb76804c724e5-996114475-1.png';
+        return 'https://markoneo123.sirv.com/RC/Screenshot%202025-12-25%20at%2019.36.05.png';
       default:
         return 'https://i.postimg.cc/13TZCwmp/Skoda-Octavia-PNG-Transparent-1775970813.png';
     }
