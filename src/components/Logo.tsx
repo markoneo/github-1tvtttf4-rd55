@@ -7,7 +7,7 @@ export default function Logo({ className = '' }: { className?: string }) {
         {/* Background glow effect */}
         <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 rounded-lg blur opacity-0 group-hover:opacity-25 transition-opacity duration-500" />
         
-        <svg width="200" height="42" viewBox="0 0 200 42" className="fill-current relative z-10">
+        <svg width="200" height="42" viewBox="0 0 200 42" className="fill-current relative z-10 w-32 sm:w-40 md:w-48 lg:w-52 h-auto">
           {/* Enhanced logo with better typography */}
           <text x="0" y="32" className="text-3xl font-bold">
             <tspan className="text-blue-600 font-extrabold tracking-tight">Ri</tspan>
