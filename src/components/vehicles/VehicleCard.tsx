@@ -20,7 +20,7 @@ export default function VehicleCard({
       case 'executive':
         return 'https://i.postimg.cc/4dRRZGhy/executive-car.png';
       case 'van':
-        return 'https://i.postimg.cc/y8WHyvH1/opel-vivaro-ready-2831090158.png';
+        return 'https://markoneo123.sirv.com/RC/561-5610848_mercedes-vito-hd-png-download.png';
       case 'minivan':
         return 'https://i.postimg.cc/DzX3t00R/979f86245703bdf377eeb76804c724e5-996114475-1.png';
       default:
