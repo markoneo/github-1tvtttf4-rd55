@@ -25,7 +25,7 @@ export const vehicles = [
   },
   {
     id: 4,
-    name: 'Minibus',
+    name: 'Double Vans',
     type: 'minivan',
     description: 'Perfect for large groups & events',
     passengers: 16,
