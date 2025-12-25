@@ -32,8 +32,8 @@ export default function Header() {
         displaySocials={true}
         displayItemNumbering={true}
         logoUrl="/favicon.svg"
-        menuButtonColor="#1f2937"
-        openMenuButtonColor="#1f2937"
+        menuButtonColor="#ffffff"
+        openMenuButtonColor="#ffffff"
         accentColor="#0ea5e9"
         changeMenuColorOnOpen={false}
         isFixed={true}
