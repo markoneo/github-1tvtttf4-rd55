@@ -18,7 +18,7 @@ export default function VehicleCard({
       case 'standard':
         return 'https://markoneo123.sirv.com/RC/2020-Skoda-Octavia-1.webp';
       case 'executive':
-        return 'https://i.postimg.cc/4dRRZGhy/executive-car.png';
+        return 'https://markoneo123.sirv.com/RC/forthing-s7-crna.webp';
       case 'van':
         return 'https://markoneo123.sirv.com/RC/561-5610848_mercedes-vito-hd-png-download.png';
       case 'minivan':
