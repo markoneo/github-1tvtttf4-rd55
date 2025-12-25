@@ -23,11 +23,11 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group flex items-center gap-2 px-3 py-2.5 text-neutral-600 hover:text-primary-600 transition-all duration-300 rounded-xl hover:bg-primary-50/50 relative overflow-hidden"
+        className="group flex items-center gap-2 px-3 py-2.5 text-white hover:text-white transition-all duration-300 rounded-xl hover:bg-white/10 relative overflow-hidden"
         aria-label="Change language"
       >
         {/* Background hover effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-100/50 to-primary-50/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-xl" />
+        <div className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-xl" />
         
         <div className="relative z-10 flex items-center gap-2">
           <Globe size={18} className="transition-transform duration-300 group-hover:rotate-12" />
