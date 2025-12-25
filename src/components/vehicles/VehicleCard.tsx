@@ -36,17 +36,17 @@ export default function VehicleCard({
         
         <div className="card-elevated h-full flex flex-col">
           {/* Image Container - Mobile Optimized */}
-          <div className="relative h-32 sm:h-40 bg-gradient-to-br from-primary-50 to-neutral-50 p-3 sm:p-4 flex items-center justify-center overflow-hidden">
+          <div className="relative h-48 sm:h-56 bg-gradient-to-br from-primary-50 to-neutral-50 p-3 sm:p-4 flex items-center justify-center overflow-hidden">
             {/* Decorative bubble elements - hidden on mobile for performance */}
             <div className="hidden sm:block absolute top-6 left-6 w-12 h-12 bg-primary-400/10 rounded-full animate-float"></div>
             <div className="hidden sm:block absolute bottom-8 right-8 w-8 h-8 bg-primary-500/10 rounded-full animate-float-reverse"></div>
-            
+
             {/* Vehicle image with optimized loading */}
             <div className="relative z-10 w-full h-full flex items-center justify-center transform transition-transform duration-300 group-hover:scale-105 will-change-transform">
               <OptimizedImage
                 src={getVehicleImage()}
                 alt={name}
-                className="max-h-28 sm:max-h-36 max-w-full"
+                className="max-h-44 sm:max-h-52 max-w-full"
                 objectFit="contain"
                 sizes="(max-width: 640px) 200px, 300px"
               />
