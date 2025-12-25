@@ -10,6 +10,11 @@ declare global {
   }
 }
 
+window.initGoogleMaps = function() {
+  window.googleMapsLoaded = true;
+  window.dispatchEvent(new Event('google-maps-loaded'));
+};
+
 let isLoadingScript = false;
 let scriptLoadPromise: Promise<void> | null = null;
 
