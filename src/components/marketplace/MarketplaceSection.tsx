@@ -24,7 +24,6 @@ export default function MarketplaceSection() {
               <div className="relative z-10">
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8">
                   <span className="block text-white">PRIVATE TRANSFER</span>
-                  <span className="block text-white">OR</span>
                   <span className="block" style={{ color: '#a98467' }}>MARKETPLACE</span>
                 </h2>
 
