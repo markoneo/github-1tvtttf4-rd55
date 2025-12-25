@@ -16,7 +16,7 @@ export default function VehicleCard({
   const getVehicleImage = () => {
     switch (type) {
       case 'standard':
-        return 'https://i.postimg.cc/13TZCwmp/Skoda-Octavia-PNG-Transparent-1775970813.png';
+        return 'https://markoneo123.sirv.com/RC/2020-Skoda-Octavia-1.webp';
       case 'executive':
         return 'https://i.postimg.cc/4dRRZGhy/executive-car.png';
       case 'van':
