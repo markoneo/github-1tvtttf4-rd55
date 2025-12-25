@@ -11,7 +11,7 @@ export const vehicles = [
     id: 2,
     name: 'Executive Car',
     type: 'executive',
-    description: 'Luxury vehicle for business travel',
+    description: 'Executive vehicle for more comfort',
     passengers: 3,
     luggage: 3,
   },
