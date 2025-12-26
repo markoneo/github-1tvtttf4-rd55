@@ -33,9 +33,9 @@ export default function Header() {
         displayItemNumbering={true}
         logoUrl="/favicon.svg"
         menuButtonColor="#ffffff"
-        openMenuButtonColor="#ffffff"
+        openMenuButtonColor="#000000"
         accentColor="#0ea5e9"
-        changeMenuColorOnOpen={false}
+        changeMenuColorOnOpen={true}
         isFixed={true}
         closeOnClickAway={true}
         ctaButton={{
