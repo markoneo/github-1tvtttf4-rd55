@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, RotateCcw, Route, Clock, Loader2 } from 'lucide-react';
 import Button from '../ui/Button';
 import { calculateDistance } from '../../services/distanceService';
+import RouteMap from './RouteMap';
 
 interface LocationSummaryProps {
   pickupAddress: string;
@@ -70,6 +71,15 @@ export default function LocationSummary({
 
   return (
     <div className="bg-gray-50 rounded-lg p-4 sm:p-6 space-y-4 sm:space-y-6">
+      {/* Route Map */}
+      {pickupAddress && dropoffAddress && (
+        <RouteMap
+          pickupAddress={pickupAddress}
+          dropoffAddress={dropoffAddress}
+          className="mb-4"
+        />
+      )}
+
       {/* Location Details */}
       <div className="space-y-4">
         <div className="flex items-start gap-2 sm:gap-3">
