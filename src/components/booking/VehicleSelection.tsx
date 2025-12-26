@@ -12,25 +12,25 @@ const vehicles: VehicleOption[] = [
   {
     type: 'standard',
     name: 'Standard',
-    image: 'https://imagedelivery.net/9dYZtR9yV_EhgbKhN9AJFw/e8c0c5c9-c2c4-4f7d-4c7c-c0f4c6a5c800/public',
+    image: 'https://markoneo123.sirv.com/RC/2020-Skoda-Octavia-1.webp',
     maxPassengers: 4
   },
   {
     type: 'executive',
     name: 'Executive',
-    image: 'https://imagedelivery.net/9dYZtR9yV_EhgbKhN9AJFw/c8c0c5c9-c2c4-4f7d-4c7c-c0f4c6a5c900/public',
+    image: 'https://markoneo123.sirv.com/RC/forthing-s7-crna.webp',
     maxPassengers: 3
   },
   {
     type: 'van',
     name: 'Van',
-    image: 'https://imagedelivery.net/9dYZtR9yV_EhgbKhN9AJFw/b8c0c5c9-c2c4-4f7d-4c7c-c0f4c6a5d000/public',
+    image: 'https://markoneo123.sirv.com/RC/561-5610848_mercedes-vito-hd-png-download.png',
     maxPassengers: 8
   },
   {
     type: 'minibus',
-    name: 'Minibus',
-    image: 'https://imagedelivery.net/9dYZtR9yV_EhgbKhN9AJFw/a8c0c5c9-c2c4-4f7d-4c7c-c0f4c6a5d100/public',
+    name: 'Double Vans',
+    image: 'https://markoneo123.sirv.com/RC/Screenshot%202025-12-25%20at%2019.36.05.png',
     maxPassengers: 16
   }
 ];
