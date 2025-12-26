@@ -34,7 +34,7 @@ export default function DirectServiceExplainer() {
               In the private transfer industry, many services operate as intermediaries, connecting
               clients with a network of third-party transportation providers. While this model offers
               broad coverage, it can introduce uncertainty regarding the quality of the vehicle and
-              the professionalism of the driver. At Taxislovenia, we distinguish ourselves through a
+              the professionalism of the driver. At RideConnect, we distinguish ourselves through a
               vertically integrated service model.
             </p>
             <p>
