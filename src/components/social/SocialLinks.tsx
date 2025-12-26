@@ -15,7 +15,15 @@ export default function SocialLinks() {
             className="text-gray-400 hover:text-white transform hover:scale-110 transition-all duration-200"
             aria-label={`Follow us on ${social.name}`}
           >
-            <social.icon size={24} />
+            {social.icon ? (
+              <social.icon size={24} />
+            ) : social.imageUrl ? (
+              <img
+                src={social.imageUrl}
+                alt={social.name}
+                className="w-6 h-6 object-contain"
+              />
+            ) : null}
           </a>
         ))}
       </div>
