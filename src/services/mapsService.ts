@@ -7,6 +7,7 @@ declare global {
     google: any;
     googleMapsLoaded?: boolean;
     initGoogleMaps?: () => void;
+    gm_authFailure?: () => void;
   }
 }
 
@@ -61,7 +62,14 @@ const loadGoogleMapsScript = (): Promise<void> => {
 
     script.onerror = () => {
       isLoadingScript = false;
+      scriptLoadPromise = null;
       reject(new Error('Failed to load Google Maps script'));
+    };
+
+    window.gm_authFailure = () => {
+      isLoadingScript = false;
+      scriptLoadPromise = null;
+      reject(new Error('Google Maps authentication failed'));
     };
 
     document.head.appendChild(script);
