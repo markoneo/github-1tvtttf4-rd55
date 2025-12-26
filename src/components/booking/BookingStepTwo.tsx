@@ -50,28 +50,28 @@ export default function BookingStepTwo({
     {
       type: 'standard',
       name: 'Standard Car',
-      image: 'https://i.postimg.cc/13TZCwmp/Skoda-Octavia-PNG-Transparent-1775970813.png',
+      image: 'https://markoneo123.sirv.com/RC/2020-Skoda-Octavia-1.webp',
       maxPassengers: 4,
       features: ['Meet & Greet', 'Flight monitoring', '60min free waiting', 'Professional driver']
     },
     {
       type: 'executive',
       name: 'Executive Car',
-      image: 'https://i.postimg.cc/4dRRZGhy/executive-car.png',
+      image: 'https://markoneo123.sirv.com/RC/forthing-s7-crna.webp',
       maxPassengers: 3,
       features: ['Meet & Greet', 'Flight monitoring', '60min free waiting', 'Professional driver', 'Complimentary water']
     },
     {
       type: 'van',
       name: 'Van',
-      image: 'https://i.postimg.cc/y8WHyvH1/opel-vivaro-ready-2831090158.png',
+      image: 'https://markoneo123.sirv.com/RC/561-5610848_mercedes-vito-hd-png-download.png',
       maxPassengers: 8,
       features: ['Meet & Greet', 'Flight monitoring', '60min free waiting', 'Professional driver', 'Extra luggage space']
     },
     {
       type: 'minibus',
-      name: 'Minibus',
-      image: 'https://i.postimg.cc/DzX3t00R/979f86245703bdf377eeb76804c724e5-996114475-1.png',
+      name: 'Double Vans',
+      image: 'https://markoneo123.sirv.com/RC/Screenshot%202025-12-25%20at%2019.36.05.png',
       maxPassengers: 16,
       features: ['Meet & Greet', 'Flight monitoring', '60min free waiting', 'Professional driver', 'Group transport']
     }

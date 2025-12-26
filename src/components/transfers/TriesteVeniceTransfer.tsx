@@ -14,7 +14,7 @@ const VEHICLE_OPTIONS = [
     name: 'Standard Car', 
     price: 240, 
     maxPassengers: 3,
-    image: 'https://i.postimg.cc/13TZCwmp/Skoda-Octavia-PNG-Transparent-1775970813.png',
+    image: 'https://markoneo123.sirv.com/RC/2020-Skoda-Octavia-1.webp',
     paymentLink: 'https://buy.stripe.com/9AQ9DW7yr09Nh0IfZj'
   },
   { 
@@ -22,7 +22,7 @@ const VEHICLE_OPTIONS = [
     name: 'Executive Car', 
     price: 290, 
     maxPassengers: 3,
-    image: 'https://i.postimg.cc/4dRRZGhy/executive-car.png',
+    image: 'https://markoneo123.sirv.com/RC/forthing-s7-crna.webp',
     paymentLink: 'https://buy.stripe.com/eVa9DW2e73lZaCk5kG'
   },
   { 
@@ -30,15 +30,15 @@ const VEHICLE_OPTIONS = [
     name: 'Van', 
     price: 380, 
     maxPassengers: 8,
-    image: 'https://i.postimg.cc/y8WHyvH1/opel-vivaro-ready-2831090158.png',
+    image: 'https://markoneo123.sirv.com/RC/561-5610848_mercedes-vito-hd-png-download.png',
     paymentLink: 'https://buy.stripe.com/3cs6rK05Z9Kn4dW4gD'
   },
-  { 
-    type: 'minibus', 
-    name: 'Minibus', 
-    price: 650, 
+  {
+    type: 'minibus',
+    name: 'Double Vans',
+    price: 650,
     maxPassengers: 16,
-    image: 'https://i.postimg.cc/DzX3t00R/979f86245703bdf377eeb76804c724e5-996114475-1.png',
+    image: 'https://markoneo123.sirv.com/RC/Screenshot%202025-12-25%20at%2019.36.05.png',
     paymentLink: 'https://buy.stripe.com/00gcQ89Gzg8LbGobJ6'
   }
 ];
