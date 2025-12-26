@@ -29,14 +29,17 @@ export default function RouteMap({ pickupAddress, dropoffAddress, className = ''
           await waitForGoogleMaps();
         }
 
+        const isMobile = window.innerWidth < 768;
+
         if (!mapInstanceRef.current) {
           mapInstanceRef.current = new google.maps.Map(mapRef.current, {
             zoom: 10,
             center: { lat: 45.5, lng: 13.5 },
-            mapTypeControl: true,
+            mapTypeControl: !isMobile,
             streetViewControl: false,
-            fullscreenControl: true,
-            zoomControl: true,
+            fullscreenControl: !isMobile,
+            zoomControl: !isMobile,
+            gestureHandling: isMobile ? 'greedy' : 'auto',
           });
         }
 
