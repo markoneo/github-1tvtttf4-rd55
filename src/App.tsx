@@ -36,10 +36,6 @@ function App() {
         <main>
           <div id="booking" className="w-full mx-auto -mt-16 relative z-10">
             <div className="bg-white p-4 sm:p-6 md:p-8">
-              <div className="text-center mb-6">
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">Book Your Private Transfer</h2>
-                <p className="text-gray-600">Fill out the form below, and we'll send you a personalized offer</p>
-              </div>
               <BookingForm />
             </div>
 
