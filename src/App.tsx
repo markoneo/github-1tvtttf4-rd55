@@ -14,6 +14,7 @@ import ReviewsSlider from './components/reviews/ReviewsSlider';
 import TriesteVeniceTransfer from './components/transfers/TriesteVeniceTransfer';
 import WinterOffers from './components/offers/WinterOffers';
 import MarketplaceSection from './components/marketplace/MarketplaceSection';
+import DirectServiceExplainer from './components/DirectServiceExplainer';
 import { trackVisitor } from './services/visitorTrackingService';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Features />
           </div>
 
+          <DirectServiceExplainer />
           <WinterOffers />
           <TriesteVeniceTransfer />
           <VehicleFleet />
