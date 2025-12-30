@@ -50,7 +50,7 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
   useEffect(() => {
     if (formData.date && formData.time) {
       if (isBookingTooSoon(formData.date, formData.time)) {
-        setTimeError('Bookings must be made at least 24 hours in advance. Please select a later date or time.');
+        setTimeError('Advance booking required – please select a pickup time at least 24 hours from now.');
       } else {
         setTimeError(null);
       }
@@ -65,13 +65,13 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
       setError('Please enter pickup and dropoff addresses');
       return;
     }
-    
+
     // Check 24-hour rule before proceeding
     if (isBookingTooSoon(formData.date, formData.time)) {
-      setTimeError('Bookings must be made at least 24 hours in advance. Please select a later date or time.');
+      setTimeError('Advance booking required – please select a pickup time at least 24 hours from now.');
       return;
     }
-    
+
     onNext();
   };
 
@@ -200,11 +200,11 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
         <div className="inline-block bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
           Reserve Now and Pay Later - Secure your spot while staying flexible
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-2">
-          Book Your Private Transfer
+        <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-3">
+          Get a fixed price for your private transfer
         </h1>
-        <p className="text-slate-600 text-lg">
-          Professional drivers, comfortable vehicles, competitive prices
+        <p className="text-slate-600 text-base sm:text-lg">
+          Airport, cruise port & hotel transfers – no hidden fees
         </p>
       </div>
 
@@ -226,12 +226,12 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
                   name="pickupAddress"
                   value={addresses.pickup}
                   onChange={(value, isConfirmed) => handleAddressChange('pickup', value, isConfirmed)}
-                  placeholder="Airport, city, or address..."
+                  placeholder="Airport, hotel, cruise port, or address"
                   required
                   className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-cyan-500 focus:ring-0 transition-colors text-lg"
                 />
               </div>
-              <p className="text-xs text-slate-500 mt-1 pl-1">Airport, hotel, cruise port, or address</p>
+              <p className="text-xs text-slate-500 mt-1 pl-1 italic">Flight delays? We track your arrival.</p>
             </div>
 
             {/* Swap Button */}
@@ -258,7 +258,7 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
                   name="dropoffAddress"
                   value={addresses.dropoff}
                   onChange={(value, isConfirmed) => handleAddressChange('dropoff', value, isConfirmed)}
-                  placeholder="Airport, city, or address..."
+                  placeholder="Destination address"
                   required
                   className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-cyan-500 focus:ring-0 transition-colors text-lg"
                 />
@@ -302,6 +302,7 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
                   className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-cyan-500 focus:ring-0 transition-colors text-lg"
                 />
               </div>
+              <p className="text-xs text-slate-500 mt-1 pl-1 italic">Pickup time (local time)</p>
             </div>
 
             {/* Passengers Field */}
