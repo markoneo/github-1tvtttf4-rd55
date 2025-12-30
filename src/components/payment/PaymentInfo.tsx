@@ -10,28 +10,13 @@ export default function PaymentInfo() {
           Secure Payment Process
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white rounded-lg p-4 shadow-sm">
-            <div className="flex items-start gap-3">
-              <DollarSign className="h-6 w-6 text-blue-600 mt-1" />
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Reservation Deposit</h4>
-                <p className="text-gray-600 text-sm">
-                  Only 20% deposit required to secure your booking. Pay securely online with your preferred payment method.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg p-4 shadow-sm">
-            <div className="flex items-start gap-3">
-              <CreditCard className="h-6 w-6 text-blue-600 mt-1" />
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Remaining Balance</h4>
-                <p className="text-gray-600 text-sm">
-                  Pay the remaining 80% to your driver in cash or by credit card after your journey.
-                </p>
-              </div>
+        <div className="bg-white rounded-lg p-4 shadow-sm">
+          <div className="flex items-start gap-3">
+            <CreditCard className="h-6 w-6 text-blue-600 mt-1" />
+            <div>
+              <p className="text-gray-600 text-sm">
+                A payment link will be sent to you. Please ensure your payment is completed at least 48 hours before pickup to secure your booking.
+              </p>
             </div>
           </div>
         </div>
