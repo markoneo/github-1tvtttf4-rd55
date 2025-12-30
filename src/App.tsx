@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -15,18 +15,8 @@ import TriesteVeniceTransfer from './components/transfers/TriesteVeniceTransfer'
 import WinterOffers from './components/offers/WinterOffers';
 import MarketplaceSection from './components/marketplace/MarketplaceSection';
 import DirectServiceExplainer from './components/DirectServiceExplainer';
-import { trackVisitor } from './services/visitorTrackingService';
 
 function App() {
-  // Track visitor when the app loads
-  useEffect(() => {
-    // Small delay to ensure the page has loaded
-    const timer = setTimeout(() => {
-      trackVisitor().catch(err => console.error('Visitor tracking error:', err));
-    }, 3000);
-    
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <HelmetProvider>
