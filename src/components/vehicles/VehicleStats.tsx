@@ -74,18 +74,14 @@ export default function VehicleStats({ passengers, luggage, type }: VehicleStats
       
       {/* Always visible summary (when collapsed) */}
       {!isExpanded && (
-        <div className="flex items-center gap-3 text-sm text-gray-600">
-          <div className="flex items-center gap-1">
-            <Users size={14} className="text-blue-600" />
+        <div className="flex flex-wrap items-center gap-3 text-base font-medium text-gray-700">
+          <div className="flex items-center gap-2 bg-blue-50 px-3 py-1.5 rounded-lg">
+            <Users size={18} className="text-blue-600" />
             <span>{passengers}</span>
           </div>
-          <div className="flex items-center gap-1">
-            <Briefcase size={14} className="text-blue-600" />
-            <span>{luggage}</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <Star size={14} className="text-yellow-500" />
-            <span>4.8+</span>
+          <div className="flex items-center gap-2 bg-blue-50 px-3 py-1.5 rounded-lg">
+            <Briefcase size={18} className="text-blue-600" />
+            <span>{luggage} suitcases</span>
           </div>
         </div>
       )}

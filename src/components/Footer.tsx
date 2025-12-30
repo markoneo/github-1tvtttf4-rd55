@@ -34,6 +34,11 @@ export default function Footer() {
           {/* Social Media Icons */}
           <SocialLinks />
 
+          {/* Service Area */}
+          <div className="text-center text-gray-400 text-sm max-w-2xl">
+            <p>Serving Italy, Croatia & Slovenia – Venice, Trieste, Ljubljana, Istria</p>
+          </div>
+
           {/* Copyright */}
           <div className="text-center text-gray-400">
             <p>&copy; {currentYear} RideConnect. All rights reserved.</p>

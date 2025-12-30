@@ -231,6 +231,7 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
                   className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-cyan-500 focus:ring-0 transition-colors text-lg"
                 />
               </div>
+              <p className="text-xs text-slate-500 mt-1 pl-1">Airport, hotel, cruise port, or address</p>
             </div>
 
             {/* Swap Button */}
@@ -329,7 +330,7 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
           {/* Price Display Section */}
           {formData.priceEstimate && (
             <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border-2 border-cyan-200 rounded-xl p-4">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between mb-2">
                 <div>
                   <p className="text-sm text-slate-600 mb-1">Estimated Price</p>
                   <p className="text-2xl font-bold text-slate-800">
@@ -340,6 +341,10 @@ export default function BookingStepOne({ formData, onChange, onNext }: BookingSt
                   <p>{Math.round(formData.priceEstimate.distance)} km</p>
                   <p>~{Math.round(formData.priceEstimate.duration)} min</p>
                 </div>
+              </div>
+              <div className="flex flex-col gap-1 pt-2 border-t border-cyan-200">
+                <p className="text-xs text-slate-600 font-medium">✓ All taxes & tolls included</p>
+                <p className="text-xs text-slate-600 font-medium">✓ No hidden fees</p>
               </div>
             </div>
           )}

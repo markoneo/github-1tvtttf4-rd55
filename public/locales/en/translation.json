@@ -1,9 +1,14 @@
 {
   "hero": {
     "title": "Smart Travel Solutions",
-    "subtitle": "Enjoy comfort and reliability with our private transfer service",
+    "subtitle": "Reliable private transfers with professional drivers",
     "searchDescription": "Our intelligent search engine finds the perfect match for your journey",
-    "bookButton": "Book Your Transfer"
+    "bookButton": "Get Instant Price",
+    "trustSignals": {
+      "rating": "5-Star Rated Transfers",
+      "experience": "20+ Years Experience",
+      "support": "24/7 Support"
+    }
   },
   "booking": {
     "title": "Book Your Private Transfer",

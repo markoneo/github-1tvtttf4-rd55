@@ -15,6 +15,7 @@ import TriesteVeniceTransfer from './components/transfers/TriesteVeniceTransfer'
 import WinterOffers from './components/offers/WinterOffers';
 import MarketplaceSection from './components/marketplace/MarketplaceSection';
 import DirectServiceExplainer from './components/DirectServiceExplainer';
+import StickyMobileCTA from './components/ui/StickyMobileCTA';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
 
         <Footer />
         <Chatbot />
+        <StickyMobileCTA />
       </div>
     </HelmetProvider>
   );

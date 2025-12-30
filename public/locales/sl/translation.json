@@ -1,9 +1,14 @@
 {
   "hero": {
     "title": "Pametne Prevozne Rešitve",
-    "subtitle": "Uživajte v udobju in zanesljivosti z našo privatno prevozno službo",
+    "subtitle": "Zanesljivi privatni prevozi s profesionalnimi vozniki",
     "searchDescription": "Naš inteligentni iskalnik najde popolno ujemanje za vašo pot",
-    "bookButton": "Rezervirajte Prevoz"
+    "bookButton": "Pridobite Takojšnjo Ceno",
+    "trustSignals": {
+      "rating": "5-Zvezdični Prevozi",
+      "experience": "Več kot 20 let Izkušenj",
+      "support": "24/7 Podpora"
+    }
   },
   "booking": {
     "title": "Rezervirajte Svoj Privatni Prevoz",

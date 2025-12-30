@@ -33,8 +33,16 @@ export default function VehicleCard({
       <div className="relative group overflow-hidden h-full">
         {/* Animated background glow - optimized for performance */}
         <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-600 to-primary-400 opacity-0 group-hover:opacity-30 rounded-2xl blur-lg transition-opacity duration-500 will-change-opacity"></div>
-        
+
         <div className="card-elevated h-full flex flex-col">
+          {/* Most Popular Badge */}
+          {type === 'van' && (
+            <div className="absolute top-4 right-4 z-20 bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg flex items-center gap-1">
+              <Star size={14} className="fill-white" />
+              Most Popular
+            </div>
+          )}
+
           {/* Image Container - Mobile Optimized */}
           <div className="relative h-48 sm:h-56 bg-gradient-to-br from-primary-50 to-neutral-50 p-3 sm:p-4 flex items-center justify-center overflow-hidden">
             {/* Decorative bubble elements - hidden on mobile for performance */}

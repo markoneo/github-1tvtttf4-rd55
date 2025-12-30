@@ -86,27 +86,25 @@ export default function RouteMap({ pickupAddress, dropoffAddress, className = ''
   }, [pickupAddress, dropoffAddress]);
 
   if (error) {
-    return (
-      <div className={`bg-amber-50 border border-amber-200 rounded-lg p-4 ${className}`}>
-        <div className="flex items-center gap-2 text-amber-700">
-          <AlertCircle size={20} />
-          <p className="text-sm">{error}</p>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (
-    <div className={`relative bg-gray-100 rounded-lg overflow-hidden ${className}`}>
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-white/90 z-10">
-          <div className="flex items-center gap-2 text-gray-600">
-            <Loader2 size={20} className="animate-spin" />
-            <span className="text-sm">Loading route map...</span>
+    <div className={className}>
+      <div className="mb-2">
+        <p className="text-sm font-medium text-slate-700">Your route preview</p>
+      </div>
+      <div className="relative bg-gray-100 rounded-lg overflow-hidden">
+        {isLoading && (
+          <div className="absolute inset-0 flex items-center justify-center bg-white/90 z-10">
+            <div className="flex items-center gap-2 text-gray-600">
+              <Loader2 size={20} className="animate-spin" />
+              <span className="text-sm">Loading route map...</span>
+            </div>
           </div>
-        </div>
-      )}
-      <div ref={mapRef} className="w-full h-full min-h-[300px] sm:min-h-[400px]" />
+        )}
+        <div ref={mapRef} className="w-full h-full min-h-[220px] sm:min-h-[400px]" />
+      </div>
     </div>
   );
 }
