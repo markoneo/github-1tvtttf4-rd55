@@ -246,6 +246,18 @@ export default function BookingStepTwo({
                         `}
                         type="button"
                       >
+                        {/* Badge */}
+                        {vehicle.type === 'van' && !isDisabled && (
+                          <div className="absolute top-2 left-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md">
+                            Most Popular
+                          </div>
+                        )}
+                        {vehicle.type === 'standard' && !isDisabled && (
+                          <div className="absolute top-2 left-2 bg-gradient-to-r from-blue-500 to-primary-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md">
+                            Recommended
+                          </div>
+                        )}
+
                         {/* Vehicle Image */}
                         <div className="w-full h-24 bg-neutral-50 rounded-lg flex items-center justify-center mb-3">
                           <img
@@ -255,7 +267,7 @@ export default function BookingStepTwo({
                             loading="lazy"
                           />
                         </div>
-                        
+
                         {/* Vehicle Info */}
                         <div className="flex-1">
                           <div className="flex justify-between items-start mb-2">
@@ -267,7 +279,11 @@ export default function BookingStepTwo({
                             </div>
                             {!isDisabled && price && (
                               <div className="text-right">
-                                <span className="text-lg font-bold text-primary-600">€{price}</span>
+                                <div className="text-lg font-bold text-primary-600">€{price}</div>
+                                <div className="text-xs text-neutral-500 mt-0.5">
+                                  <div>All taxes & tolls included</div>
+                                  <div>No hidden fees</div>
+                                </div>
                               </div>
                             )}
                           </div>
